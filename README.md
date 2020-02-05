@@ -1,0 +1,1 @@
+# 202002.next.js-9.2-cannot-destructure-publicruntimeconfig
