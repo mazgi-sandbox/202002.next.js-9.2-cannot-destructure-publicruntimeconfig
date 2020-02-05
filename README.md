@@ -1,9 +1,17 @@
 # 202002.next.js-9.2-cannot-destructure-publicruntimeconfig
 
+## Run dev server
+
+No problem.
+
 ```shellsession
 sudo rm -rf next-app/{.next,node_modules} \
 && docker run -it --rm -v $PWD/next-app:/workspace -w /workspace node:12 bash -c 'npm install && npm run dev'
 ```
+
+## Run test w/ Jest & Enzyme
+
+An error occurred.
 
 ```shellsession
 sudo rm -rf next-app/{.next,node_modules} \
@@ -68,6 +76,10 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /root/.npm/_logs/2020-02-05T09_53_59_641Z-debug.log
 ```
+
+## Build
+
+No problem.
 
 ```shellsession
 sudo rm -rf next-app/{.next,node_modules} \
