@@ -18,7 +18,12 @@ sudo rm -rf next-app/{.next,node_modules} \
 && docker run -it --rm -v $PWD/next-app:/workspace -w /workspace node:12 bash -c 'npm install && npm run test'
 ```
 
-It has an error that occurred like bellow.
+~~It has an error that occurred like bellow.~~ =>  
+It solves by Mock Functions.  
+See also [How to setup jest tests to use publicRuntimeConfig...](https://spectrum.chat/next-js/general/how-to-setup-jest-tests-to-use-publicruntimeconfig~27f8cee1-d4a4-4b68-bb62-ea6562a77544)
+
+<details>
+<summary>(outdated) console output</summary>
 
 ```shellsession
 > core-js@2.6.11 postinstall /workspace/node_modules/core-js
@@ -76,6 +81,8 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /root/.npm/_logs/2020-02-05T09_53_59_641Z-debug.log
 ```
+
+</details>
 
 ## Build
 
